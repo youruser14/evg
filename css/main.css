@@ -98,23 +98,23 @@ a {
   
 }
 .mechanic {
-  background: url(../img/1img.jpg) center / cover no-repeat;
+  background: url("../img/1img.jpg") center / cover no-repeat;
 }
 
 .sand {
-  background: url(../img/2img.jpg) center / cover no-repeat;
+  background: url("../img/2img.jpg") center / cover no-repeat;
 }
 .fire-protection {
-  background: url(../img/3img.jpg) center / cover no-repeat;
+  background: url("../img/3img.jpg") center / cover no-repeat;
 }
 .colors-work {
-  background: url(../img/4img.jpg) center / cover no-repeat;
+  background: url("../img/4img.jpg") center / cover no-repeat;
 }
 .high-work {
-  background: url(../img/5img.jpg) center / cover no-repeat;
+  background: url("../img/5img.jpg") center / cover no-repeat;
 }
 .waterproofing {
-  background: url(..img/6img.jpg) center / cover no-repeat;
+  background: url("../img/6img.jpg") center / cover no-repeat;
 }
 
 .activity__text {
