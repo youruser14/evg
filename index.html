@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>АТС</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header" id="header">
+      <div class="nav-header__container fixed-top">
+        <nav class="navbar navbar-expand-md navbar-light jc-sb">
+          <div class="container">
+            <a href="#header" class="navbar-brand">АТС</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarContent"
+              aria-controls="navbarContent"
+              aria-expanded="false"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse jc-fe" id="navbarContent">
+              <ul class="navbar-nav mr-auto mb-2 jc-fe">
+                <li class="nav-item"><a href="#what_we_do" class="nav-link">Типы работ</a></li>
+                <li class="nav-item"><a href="#photos" class="nav-link">Фото работ</a></li>
+                <li class="nav-item"><a href="#info" class="nav-link">Информация о нас</a></li>
+                <li class="nav-item">
+                  <button
+                  type="button"
+                  class="btn btn-secondary btn-header"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModalCall"
+                >
+                  Заказать звонок
+                </button></li>
+                
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="header-content container text-center">
+        <h1 class="main__title text-uppercase">Антикоррозийная обработка в Воронеже</h1>
+        <h4 class="base__title text-h4">
+          промышленные объекты, спецтехника, металлоконструкции, <br> бетонные сооружения
+        </h4>
+      </div>
+    </header>
+    <!-- HEADER -->
+
+    <!-- ABOUT -->
+    <section class="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-center text-uppercase mt-5 mb-5" id="what_we_do">
+              Чем мы занимаемся?
+            </h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-4 col-md-6 col-sm-12 mb-3">
+            <div class="activity__flex-item text-center mechanic">
+              <h3 class="text-h4 activity__text">
+                Очистка механичским методом
+              </h3>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal1"
+              >
+                Узнать подробнее
+              </button>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12 mb-3">
+            <div class="activity__flex-item text-center sand">
+              <h3 class="text-h4 activity__text">Пескоструйная очистка</h3>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal2"
+              >
+                Узнать подробнее
+              </button>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12 mb-3">
+            <div class="activity__flex-item text-center fire-protection">
+              <h3 class="text-h4 activity__text">Нанесение огнезащиты</h3>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal3"
+              >
+                Узнать подробнее
+              </button>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12 mb-3">
+            <div class="activity__flex-item text-center colors-work">
+              <h3 class="text-h4 activity__text">Покрасочные работы</h3>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal4"
+              >
+                Узнать подробнее
+              </button>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12 mb-3">
+            <div class="activity__flex-item text-center high-work">
+              <h3 class="text-h4 activity__text">Высотные работы</h3>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal5"
+              >
+                Узнать подробнее
+              </button>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12 mb-3">
+            <div class="activity__flex-item text-center waterproofing">
+              <h3 class="text-h4 activity__text">Гидроизоляция</h3>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal6"
+              >
+                Узнать подробнее
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- MODAL WINDOW -->
+    <!-- 1 Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal1"
+      tabindex="-1"
+      aria-hidden="true"
+      aria-labelledby="exampleModalLabel1"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel1">
+              Очистка ручным методом
+            </h5>
+            <button
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Этот способ представляет из себя удаление ржавчины
+              механизированными инструментами, например, проволочными щётками,
+              шлифовальными и абразивными кругами.
+            </p>
+            <p>
+              Если к части очищаемой поверхности отсутствует доступ, этот
+              участок подготавливается с помощью немеханических инструментов,
+              таких как наждак, скребки, проволочные щётки.
+            </p>
+            <p>
+              Так как метод является неавтоматическим, это, с одной стороны,
+              ограничивает скорость и точность выполняемых работ, а с другой,
+              позволяет без применения специфичных инструментов оперативно
+              зачищать конкретные площади.
+            </p>
+          </div>
+          <div class="modal-footer"></div>
+        </div>
+      </div>
+    </div>
+    <!-- 1 Modal -->
+    <!-- 2 Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal2"
+      tabindex="-1"
+      aria-hidden="true"
+      aria-labelledby="exampleModalLabel2"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel2">
+              Пескоструйная очистка
+            </h5>
+            <button
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Пескоструйная очистка (абразивоструйная очистка) — перед
+              нанесением любых покрытий обязательно проводится очистка бетонных
+              и металлических поверхностей. Под абразивоструйной очисткой
+              понимают очистку поверхностей путем воздействия потока абразива,
+              который с помощью сжатого воздуха с высоким ускорением
+              направляется на очищаемый объект через сопло.
+            </p>
+            <p>
+              Наша компания выполняет такую подготовку с использованием
+              высокопроизводительного оборудования, которое позволяет удалить
+              практически любые загрязнения с бетонных и металлических
+              поверхностей:
+              <ol>
+                <li>Удаление с поверхности прокатной окалины, ржавчины, пригара, остатков формовочной смеси (для вновь изготавливаемых изделий);</li>
+                <li>Удаление старых покрытий (для восстанавливаемых изделий);</li>
+                <li>Создание микрорельефа-придание поверхности шероховатости (на гладкой поверхности);</li>
+                <li>Поверхностное упрочнение, снимающее поверхностные напряжения и повышающее сопротивляемость циклическим нагрузкам;</li>
+                <li>Удаление наслоений на бетоне и при очистке фасадов зданий.</li>
+              </ol>
+            </p>
+            <p>
+              Если вы ищете подходящий способ очистки металла или подготовки
+              перед окрашиванием, то пескоструйная обработка в большинстве
+              случаев будет оптимальной. Благодаря высокой производительности и
+              экономичности, пескоструйная обработка металла многие годы
+              остается наиболее популярным методом очистки и подготовки перед
+              нанесением защитных покрытий.
+            </p>
+          </div>
+          <div class="modal-footer"></div>
+        </div>
+      </div>
+    </div>
+    <!-- 2 Modal -->
+    <!-- 3 Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal3"
+      tabindex="-1"
+      aria-hidden="true"
+      aria-labelledby="exampleModalLabel3"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel3">
+              Нанесение огнезащиты
+            </h5>
+            <button
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Услуги антипирирования (огнезащиты) — это комплексные работы, направленные на снижение пожарной опасности различных кон­струкций и материалов путем специальной обработки (нанесения специальных огнеупорных составов).
+            </p>
+            <p>
+              Огнезащита металлических конструкций состоит в создании на поверхности элементов конструкций теплоизолирующих экранов, выдерживающих высокие температуры и непосредственное дей­ствие огня. Наличие таких экранов позволяет замедлить прогрева­ние металла и сохранить конструкции свои функции при пожаре в течение заданного периода времени. Согласно СНиП 21-01-97*, применение незащищенных стальных конструкций допускается, когда минимальный требуемый предел огнестойкости конструк­ции установлен R 15 (RE 15, REI 15), за исключением случаев, когда предел огнестойкости несущих элементов здания по результатам испытаний составляет менее R 8. В этих, а также во всех остальных случаях, когда требуемый предел огнестойкости конструкций бо­лее R 15 (RE 15, REI 15), требуется повысить их огнестойкость до заданного уровня с помощью средств огнезащиты.
+            </p>
+            <p>
+              Наши специалисты работают с проверенными материалами как отечественных, так и зарубежных марок. Антикоррозионную защиту поверхности обеспечивают различные лакокрасочные составы: ЭП — эпоксидные, ПФ — пентафталевые, ГФ — глифталевые, УР — полиуретановые, ХВ — перхлорвиниловые и поливинилхлоридные, КЧ — каучуковые, БТ — битумные, КО — кремнийорганические. Они могут быть одно-, двух- или трехкомпонентными, содержать дополнительные компоненты для борьбы с ржавчиной. Хорошо себя зарекомендовали материалы, в состав которых входят соединения цинка — они отлично защищают не только от химической, но и от электрохимической составляющей коррозии.
+            </p>
+          </div>
+          <div class="modal-footer"></div>
+        </div>
+      </div>
+    </div>
+    <!-- 3 Modal -->
+    <!-- 4 Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal4"
+      tabindex="-1"
+      aria-hidden="true"
+      aria-labelledby="exampleModalLabel4"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel4">
+              Покрасочные работы
+            </h5>
+            <button
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>Окраска металлоконструкций безвоздушным и воздушным распылением:</p>
+            <ul>
+              <li>окраска фасадов и бетонных поверхностей</li>
+              <li>покраска ангаров и промышленных помещений</li>
+            </ul>
+            <p>Работы по покраске выполняем в малярном цеху или на территории заказчика. Покрытие жидкими красками и краской любой сложности: 
+              <ul>
+              <li>двухкомпонентной</li>
+              <li>однокомпонентной</li>
+              <li>ГФ</li>
+              <li>ПФ</li>
+            </ul>  по толщине слоя в микронах. </p>
+          </div>
+          <div class="modal-footer"></div>
+        </div>
+      </div>
+    </div>
+    <!-- 4 Modal -->
+
+    <!-- 5 Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal5"
+      tabindex="-1"
+      aria-hidden="true"
+      aria-labelledby="exampleModalLabel5"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel5">Высотные работы</h5>
+            <button
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Промышленный альпинизм — это сфера выполнения работ при помо­щи альпинистского снаряжения и техник проведения работ в «безо­порном» пространстве.
+            </p>
+            <p>
+              На данный момент промышленный альпинизм является наиболее эффективным и выгодным видом работ на высоте. Так как промыш­ленные альпинисты имеют возможность выполнять работы на любой высоте без организации дополнительных рабочих пространств. Необ­ходимое единственное условие для проведения работ — это возмож­ность закрепления верёвки. Так же промышленные альпинисты могут проводить высотные работы, в гораздо меньшей степени завися от шкалы Бофорта (шкала измерения порывов ветра) нежели «люльки» и другие устройства подъёма людей к точке проведения работ
+            </p>
+          </div>
+          <div class="modal-footer"></div>
+        </div>
+      </div>
+    </div>
+    <!-- 5 Modal -->
+
+    <!-- 6 Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal6"
+      tabindex="-1"
+      aria-hidden="true"
+      aria-labelledby="exampleModalLabel6"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel6">Гидроизоляция</h5>
+            <button
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Услуги гидрофобизации — защиты сооружений от влаги. Существует множество факторов, негативно вли­яющих на здания и сооружения: ветровое и био­логическое воздействие, вибрация, перепады температур и, конечно же, вода. Дождевая вода, по сути, является кислым раствором и несет в себе огромное количество примесей и выбросов, а грунтовая пробирается снизу, разрушая фасады и фундаменты.
+            </p>
+          </div>
+          <div class="modal-footer"></div>
+        </div>
+      </div>
+    </div>
+    <!-- 6 Modal -->
+
+    <!-- MODAL WINDOW -->
+    <!-- ABOUT -->
+    <!-- SECTION-our-works -->
+    <section class="our-works">
+      <h2 class="text-center text-uppercase mt-5 mb-5 title-block" id="photos" >
+        Примеры наших работ
+      </h2>
+      <div class="container">
+        <div class="col-12"></div>
+        <!-- carousel -->
+        <div
+          class="carousel slide"
+          id="carouselControls"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="carousel-img__block">
+                <img
+                  class="d-block carousel-img"
+                  src="./img/stella.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img__block">
+                <img
+                  class="d-block carousel-img"
+                  src="./img/stella2.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img__block">
+                <img
+                  class="d-block carousel-img"
+                  src="./img/locomotive.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img__block">
+                <img
+                  class="d-block carousel-img"
+                  src="./img/stone-processing.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img__block">
+                <img
+                  class="d-block carousel-img"
+                  src="./img/special-equipment.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-img__block">
+                <img
+                  class="d-block carousel-img"
+                  src="./img/special-equipment-result.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <a
+            href="#carouselControls"
+            class="carousel-control-prev"
+            role="button"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a
+            href="#carouselControls"
+            class="carousel-control-next"
+            role="button"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span>
+          </a>
+        </div>
+
+        <!-- end carousel -->
+      </div>
+    </section>
+
+    <!-- answer -->
+    <section class="answer">
+      <h1 class="answer-title text-center title-block text-uppercase" id="info">
+        Почему стоит выбирать нас?
+      </h1>
+      <div class="container container-answer">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button
+                class="accordion-button collapsed text-uppercase"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne"
+                aria-expanded="false"
+                aria-controls="flush-collapseOne"
+              >
+              1. Опыт и квалификация
+              </button>
+            </h2>
+            <div
+              id="flush-collapseOne"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingOne"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                <ul>
+                  <li>Опыт работы в соответствующей области</li>
+                  <li>Квалификация и сертификация специалистов</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button
+                class="accordion-button collapsed text-uppercase"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo"
+                aria-expanded="false"
+                aria-controls="flush-collapseTwo"
+              >
+              2. Качество материалов и оборудования
+              </button>
+            </h2>
+            <div
+              id="flush-collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingTwo"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                <ul>
+                  <li>Использование высококачественных материалов и оборудования</li>
+                  <li>Соблюдение стандартов и норм качества</li>
+                  <li>Регулярное обновление и модернизация оборудования</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button
+                class="accordion-button collapsed text-uppercase"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree"
+                aria-expanded="false"
+                aria-controls="flush-collapseThree"
+              >
+              3. Индивидуальный подход и гибкость
+              </button>
+            </h2>
+            <div
+              id="flush-collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingThree"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                <ul>
+                  <li>Индивидуальный подход к каждому проекту
+                  </li>
+                  <li>Соблюдение стандартов и норм качества</li>
+                  <li>Регулярное обновление и модернизация оборудования</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-heading4">
+              <button
+                class="accordion-button collapsed text-uppercase"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapse4"
+                aria-expanded="false"
+                aria-controls="flush-collapse4"
+              >
+              4. Гарантии и поддержка
+              </button>
+            </h2>
+            <div
+              id="flush-collapse4"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-heading4"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                <ul>
+                  <li>Мы предоставляем гарантии на свои работы, чтобы обеспечить вашу уверенность в качестве выполненных работ.
+                  </li>
+                  <li>Мы обеспечиваем поддержку и обслуживание после выполнения работ, чтобы помочь вам в случае любых вопросов или проблем.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-heading5">
+              <button
+                class="accordion-button collapsed text-uppercase"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapse5"
+                aria-expanded="false"
+                aria-controls="flush-collapse5"
+              >
+              5. Экономия времени и средств
+              </button>
+            </h2>
+            <div
+              id="flush-collapse5"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-heading5"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                <ul>
+                  <li>Мы понимаем, что время и средства - это важные ресурсы для вашего бизнеса. Мы предлагаем оптимальные решения, чтобы сэкономить ваши средства и сократить сроки выполнения проекта.</li>
+                  <li>Мы работаем быстро и качественно, чтобы обеспечить минимальное воздействие на ваш бизнес.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          
+        </div>
+      </div>
+    </section>
+    <!-- answer -->
+    <footer class="footer">
+      <h1 class="text-center text-uppercase title-block">Контакты</h1>
+      <div class="container footer-container">
+        
+          <div class="row row-footer">
+            <div class="col-xl-4 col-md-4 col-sm-12 mb-3">
+              <div class="contacts">
+                <img src="./img/phone-icon.svg" alt="" class="contact-img">
+                <div class="contacts__name text-h3 text-uppercase">Телефон:</div>
+                <div class="number__items">
+                  <a href="tel:+79525521395" class="phone-number text-h3">+7 952 552 1395</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-4 col-sm-12 mb-3">
+              <div class="contacts">
+                <img src="./img/mail.svg" alt="" class="contact-img contacts__mail-icon">
+                <div class="contacts__name text-h3 text-uppercase">e-mail:</div>
+                <div class="number__items">
+                  <a class="contacts__content-mail text-uppercase" href="mailto:krown7782@mail.ru">krown7782@mail.ru</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-4 col-sm-12 mb-3">
+              <div class="contacts">
+                <img src="img/clock.svg" alt="Наш адрес" class="contact-img"/>
+                <div class="contacts__name text-h3">Время работы:</div>
+                <div class="contacts__content">
+                  <div class="day__contacts text-h3">пн-сб</div>
+                  <div class="time__contacts text-h3">10:00 - 20:00</div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="text-center text-uppercase title-block"><h1>Обратная связь с нами</h1><div class="container text-center">
+        <button
+        type="button"
+        class="btn btn-secondary btn-call"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModalCall"
+      >
+        Заказать звонок
+      </button></div></div>
+      <div class="footer__flex container">
+        <div class="footer__copyright text-p">
+          © 2024 АнтикоррозийныеТехнологииСтроительства
+        </div>
+        <a href="https://t.me/youruserm" class="footer__text text-p">Заказать разработку сайта</a>
+      </div>
+    </footer>
+
+    <!-- MODAL CALL -->
+    <div
+    class="modal fade"
+    id="exampleModalCall"
+    tabindex="-1"
+    aria-hidden="true"
+    aria-labelledby="exampleModalLabelCall"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabelCall">Оставьте заявку и мы Вам перезвоним!</h5>
+          <button
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <form action="https://api.web3forms.com/submit" method="POST" class="modal-body__action">
+            <input type="hidden" name="access_key" value="35e5a8f5-4da9-48ea-8187-14976bfe2483">
+            <input type="text" name="name" class="form-control" placeholder="Введите ваше имя" autocomplete="off" required>
+            <input type="nubmer" name="nubmer" class="form-control" placeholder="Введите ваше телефон" autocomplete="off" required>
+            <input type="submit" value="Отправить запрос" class="btn btn-secondary btn-header">
+          </form>
+        </div>
+        <div class="modal-footer"></div>
+      </div>
+    </div>
+  </div>
+
+    <!-- SCRIPT -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,239 @@
+/* Собственные классы */
+
+body {
+  font-family: "Montserrat", sans-serif;
+
+}
+.navbar-brand {
+  font-size: 28px;
+  font-weight: 600;
+}
+.ai-center {
+  display: flex;
+  align-items: center;
+}
+.jc-sb {
+  justify-content: space-between;
+}
+.jc-fe {
+  justify-content: flex-end;
+}
+
+.text-h4 {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.text-h2 {
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: 500;
+}
+.text-h3 {
+  font-size: 24px;
+  font-weight: 400;
+}
+.title-block {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  background-color: #0a0909;
+}
+/*  */
+
+/* Общие свойства */
+body {
+  color: #fff;
+  background-color: #191920;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+/*  */
+.header {
+  min-height: 740px;
+  background-image: url(../img/header-photo.JPEG);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.nav-header__container {
+  background-color: #27272e;
+  opacity: 90%;
+}
+
+.nav-link {
+  color: inherit;
+}
+.nav-link:hover {
+  color: rgb(236, 101, 11);
+}
+
+.header-content {
+  padding-top: 250px;
+}
+
+.base__title {
+  padding-top: 25px;
+  font-size: 25px;
+  font-weight: 100;
+  color: var(--white-color);
+  text-transform: uppercase;
+  max-width: 734px;
+  margin: 0 auto;
+  text-align: center;
+}
+/* Section About */
+.activity__flex-item {
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  gap: 25px;
+  
+}
+.mechanic {
+  background: url(../img/1img.jpg) center / cover no-repeat;
+}
+
+.sand {
+  background: url(../img/2img.jpg) center / cover no-repeat;
+}
+.fire-protection {
+  background: url(../img/3img.jpg) center / cover no-repeat;
+}
+.colors-work {
+  background: url(../img/4img.jpg) center / cover no-repeat;
+}
+.high-work {
+  background: url(../img/5img.jpg) center / cover no-repeat;
+}
+.waterproofing {
+  background: url(..img/6img.jpg) center / cover no-repeat;
+}
+
+.activity__text {
+  color: #000000;
+  font-weight: 800;
+  backdrop-filter: blur(2px);
+  padding: 5px;
+  font-size: 20px;
+}
+.build-img {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%)
+    hue-rotate(93deg) brightness(103%) contrast(103%);
+}
+
+/* section out-works */
+
+.carousel-img {
+  max-height: 800px;
+}
+.carousel-img__block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 800px;
+  background-color: #191920;
+}
+
+.modal-title {
+  color: #131010;
+}
+.modal-body {
+  color: #131010;
+}
+
+/* answer */
+
+.accordion {
+  /* --bs-accordion-border-color: none; */
+  --bs-accordion-active-color: none;
+  --bs-accordion-btn-focus-box-shadow: none;
+  --bs-accordion-btn-focus-border-color: none;
+}
+
+.accordion-flush .accordion-item .accordion-button,
+.accordion-flush .accordion-item .accordion-button.collapsed {
+  background-color: #1f1f27;
+  color: #fff;
+}
+
+.accordion-button::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.accordion-body {
+  background-color: #35353b;
+  color: #fff;
+}
+
+@media screen and (max-width: 1110px) {
+  .carousel-img__block {
+    max-height: 70vh;
+  }
+  .carousel-img {
+    max-width: 90%;
+  }
+}
+.contacts {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-direction: column;
+}
+.contacts:not(:last-child) {
+  margin-bottom: 15px;
+}
+.contact-img {
+  width: 40px;
+  height: 40px;
+}
+.contacts__content {
+  text-align: center;
+  text-transform: uppercase;
+}
+.btn-header {
+  background-color: rgb(236, 101, 11);
+}
+.btn-call {
+  margin-top: 10px;
+  width: 350px;
+  height: 70px;
+  font-size: 26px;
+  background-color: rgb(236, 101, 11);
+}
+.contacts__content-mail {
+  font-size: 24px;
+}
+@media screen and (max-width: 767px) {
+  .row-footer {
+    gap: 40px;
+  }
+.footer__flex {
+  flex-direction: column;
+  gap: 15px;
+}
+}
+.footer__flex {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.modal-body__action {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+}
+
+.text-p {
+  font-size: 14px;
+}
+
+
+
